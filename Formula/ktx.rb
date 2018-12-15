@@ -2,6 +2,7 @@ class Ktx < Formula
     desc "Tool for managing Kubernetes cluster configs"
     homepage "https://github.com/heptiolabs/ktx"
     url "https://github.com/heptiolabs/ktx/archive/master.zip"
+    version "master"
     sha256 "e2c66be9566af82bd7eb3ef8824048c3d14c35d5dc79fb7ed8f3f5ae3d0f4db6"
     head "https://github.com/heptiolabs/ktx.git"
 
