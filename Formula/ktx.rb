@@ -19,12 +19,12 @@ class Ktx < Formula
     def caveats; <<~EOS
         You should add the following to your .bashrc (or .bash_profile):
         if [ -f #{HOMEBREW_PREFIX}/share/ktx ]; then
-            . #{HOMEBREW_PREFIX}/share/ktx
+            source #{HOMEBREW_PREFIX}/share/ktx
         fi
     EOS
     end
 
     test do
-        system "test", "-f", "#{HOMEBREW_PREFIX}/share/ktx/ktx"
+        system "test", "-f", "#{HOMEBREW_PREFIX}/share/ktx"
     end
 end
