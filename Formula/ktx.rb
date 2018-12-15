@@ -1,4 +1,4 @@
-class KTX < Formula
+class Ktx < Formula
     desc "Tool for managing Kubernetes cluster configs"
     homepage "https://github.com/heptiolabs/ktx"
     url "https://github.com/heptiolabs/ktx/archive/master.zip"
