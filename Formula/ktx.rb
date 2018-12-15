@@ -8,6 +8,7 @@ class Ktx < Formula
 
     bottle :unneeded
 
+    depends_on "bash"
     depends_on "bash-completion" => :recommended
 
     def install
@@ -21,10 +22,16 @@ class Ktx < Formula
         if [ -f #{HOMEBREW_PREFIX}/share/ktx ]; then
             source #{HOMEBREW_PREFIX}/share/ktx
         fi
+        
+        If you don't have all bash_completion recipes being sourced then 
+        you'll also want to add this to your .bashrc (or .bash_profile):
+        if [ -f #{HOMEBREW_PREFIX}/etc/bash_completion/ktx-completion.sh ]; then
+            source #{HOMEBREW_PREFIX}/etc/bash_completion/ktx-completion.sh
+        fi
     EOS
     end
 
     test do
-        system "test", "-f", "#{HOMEBREW_PREFIX}/share/ktx"
+        system "bash", "-c", "source #{HOMEBREW_PREFIX}/share/ktx; ktx"
     end
 end
