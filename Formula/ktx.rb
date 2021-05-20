@@ -3,7 +3,7 @@ class Ktx < Formula
     homepage "https://github.com/heptiolabs/ktx"
     url "https://github.com/heptiolabs/ktx/archive/master.zip"
     version "master"
-    sha256 "e2c66be9566af82bd7eb3ef8824048c3d14c35d5dc79fb7ed8f3f5ae3d0f4db6"
+    sha256 "8a8906ae3cda9ef97e0c853b675f6f1cf98db4fe3099ad461582b47d1b1f3fdd"
     head "https://github.com/heptiolabs/ktx.git"
 
     bottle :unneeded
